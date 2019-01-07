@@ -22,6 +22,7 @@ import sapper from './sapper';
 import nest from './nest';
 import staticTemplate from './static';
 import styleguidist from './styleguidist';
+import razzle from './razzle';
 
 export {
   angular,
@@ -46,6 +47,7 @@ export {
   ember,
   staticTemplate,
   styleguidist,
+  razzle,
 };
 
 export type Template =
@@ -66,7 +68,8 @@ export type Template =
   | 'sapper'
   | 'nest'
   | 'static'
-  | 'styleguidist';
+  | 'styleguidist'
+  | 'razzle';
 
 export default function getDefinition(theme: Template) {
   switch (theme) {
@@ -114,6 +117,8 @@ export default function getDefinition(theme: Template) {
       return styleguidist;
     case ember.name:
       return ember;
+    case razzle.name:
+      return razzle;
     default:
       return react;
   }

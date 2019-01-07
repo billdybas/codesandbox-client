@@ -19,6 +19,7 @@ import Apollo from 'common/components/logos/Apollo';
 import Nest from 'common/components/logos/Nest';
 import Static from 'common/components/logos/Static';
 import Styleguidist from 'common/components/logos/Styleguidist';
+import Razzle from 'common/components/logos/Node'; // TODO: Use correct Logo
 
 import {
   react,
@@ -41,6 +42,7 @@ import {
   sapper,
   staticTemplate,
   styleguidist,
+  razzle,
 } from './';
 
 import type { Template } from './';
@@ -87,6 +89,8 @@ export default function getIcon(theme: Template) {
       return Static;
     case styleguidist.name:
       return Styleguidist;
+    case razzle.name:
+      return Razzle;
     default:
       return React;
   }
