@@ -670,6 +670,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "billdybas",
+      "name": "Bill Dybas",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13719429?v=4",
+      "profile": "http://dybas.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github"
